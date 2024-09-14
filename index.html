@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        <form id="form-agregar-tarea">
+            <input type="text" id="nombre" placeholder="Nombre de la tarea" required>
+            <input type="text" id="descripcion" placeholder="Descripción" required>
+            <select id="prioridad" required>
+                <option value="">Seleccionar prioridad</option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+            <button type="submit" class="agregarTarea">Agregar Tarea</button>
+        </form>
+        <button id="btn-completada">Marcar tarea como completada</button>
+        <button id="btn-buscar-estado">Buscar tareas completadas</button>
+        <button id="btn-buscar-prioridad">Buscar tareas por prioridad</button>
+        <button id="btn-buscar-nombre">Buscar tarea por nombre</button>
+        <button id="btn-listar">Listar todas las tareas</button>
+        <button id="btn-nombres">Obtener nombres de tareas</button>
+        <button id="btn-salir">Salir</button>
+        <button id="btn-borrar">Borrar todas las tareas</button> 
+        <div id="resultado"></div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
